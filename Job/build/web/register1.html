@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+  <h1>Employee Registration</h1>
+    <form action="Register1" method="post">
+        <pre>
+            <input type="text" name="name" placeholder="Enter Full Name" required>
+            <input type="email" name="email" placeholder="Enter Email" required>
+            <input type="text" name="password" placeholder="Enter passsword" required>
+            <input type="text" name="Confirm" placeholder="Confirm your password" required>
+            <input type="text" name="phone" placeholder="Enter Phone Number" required>
+            <input type="text" name="address" placeholder="Enter Address">
+
+            <label for="gender">Gender:</label>
+            <select name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" required>
+
+            <label for="education">Education Level:</label>
+            <select name="education" required>
+                <option value="highSchool">High School</option>
+                <option value="diploma">Diploma</option>
+                <option value="bachelors">Bachelor's Degree</option>
+                <option value="masters">Master's Degree</option>
+            </select>
+
+            <label for="experience">Years of Experience:</label>
+            <input type="number" name="experience" min="0" required>
+
+            <label for="resume">Upload Resume:</label>
+            <input type="file" name="resume" accept=".pdf, .doc, .docx">
+
+            <label for="skills">Skills (comma-separated):</label>
+            <input type="text" name="skills">
+
+            <label for="desiredJob">Desired Job Position:</label>
+            <input type="text" name="desiredJob">
+
+            <input type="checkbox" name="terms" required> I agree to the Terms of Service
+            <input type="checkbox" name="privacy" required> I agree to the Privacy Policy
+
+            <input type="submit" value="Register">
+        </pre>
+</form>
+    </body>
+</html>
